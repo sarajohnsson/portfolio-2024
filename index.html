@@ -3,14 +3,114 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css"
+        />
         <link rel="stylesheet" href="./styles/main.css" />
+
         <title>Portfolio 2024</title>
     </head>
     <body>
         <div class="page_wrapper">
-            <header class="header"></header>
+            <!-- HEADER -->
+            <header class="header" id="header">
+                <nav class="nav container">
+                    <a href="#" class="nav_logo">
+                        <img
+                            src="./img/signature-logo-icon.png"
+                            alt=""
+                            class="nav_logo_img"
+                        />
+                    </a>
 
-            <section class="hero"></section>
+                    <div class="nav_menu" id="nav-menu">
+                        <ul class="nav_list grid">
+                            <li class="nav_item">
+                                <a href="#home" class="nav_link">
+                                    <i class="fa-solid fa-house nav_icon"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#About" class="nav_link">
+                                    <i class="fa-solid fa-user nav_icon"></i>
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#skills" class="nav_link">
+                                    <i class="fa-solid fa-award nav_icon"></i>
+                                    Skills
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#portfolio" class="nav_link">
+                                    <i
+                                        class="fa-solid fa-briefcase nav_icon"
+                                    ></i>
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#contact" class="nav_link">
+                                    <i
+                                        class="fa-solid fa-paper-plane nav_icon"
+                                    ></i>
+                                    Contact me
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link">
+                                    <i
+                                        class="fa-solid fa-file-lines nav_icon"
+                                    ></i>
+                                    Download CV
+                                </a>
+                            </li>
+                        </ul>
+                        <i
+                            class="fa-solid fa-xmark nav_close"
+                            id="nav-close"
+                        ></i>
+                    </div>
+
+                    <div class="nav_btns">
+                        <div class="nav_toggle" id="nav-toggle">
+                            <i class="uis uis-apps"></i>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- MAIN -->
+            <main class="main">
+                <!-- HOME -->
+                <section class="home section" id="home">
+                    <div class="home_container container grid">
+                        <div class="home_content grid">
+                            <div class="home_social">
+                                <a
+                                    href="https://www.linkedin.com/in/sara-johnsson92/"
+                                    class="home_social_icon"
+                                >
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="home_social_icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="home_social_icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
+
+        <script src="./main.js"></script>
     </body>
 </html>

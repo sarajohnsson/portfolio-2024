@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 3rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: #fbfdfe;
+  color: #6a747c;
+}
+
+h1,
+h2,
+h3 {
+  color: #232729;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section_title {
+  font-size: 1.5rem;
+  color: #232729;
+}
+
+.section_subtitle {
+  display: blck;
+  font-size: 0.813rem;
+  color: #232729;
+  margin-bottom: 3rem;
+}
+
+.section_title,
+.section_subtitle {
+  text-align: center;
+}
+
+.container {
+  max-width: 768px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #fbfdfe;
+}
+
+.nav {
+  max-width: 968px;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.nav_logo_img {
+  max-width: 150px;
+}
+
+.nav_toggle {
+  color: #232729;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.nav_toggle:hover {
+  color: #184e77;
+}
+
+@media screen and (max-width: 767px) {
+  .nav_menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: #fbfdfe;
+    padding: 2rem 1.5rem 4rem 0;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s ease;
+  }
+}
+.nav_list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.813rem;
+  color: #232729;
+  font-weight: 500;
+}
+.nav_link:hover {
+  color: #184e77;
+}
+
+.nav_icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav_close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #184e77;
+}
+.nav_close:hover {
+  color: #4390cb;
+}
+
+.show-menu {
+  bottom: 0;
+}
